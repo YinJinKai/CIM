@@ -1,0 +1,42 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+}
+.context{
+	overflow: hidden;
+	clear: both;
+	width: 1192px;
+	margin: 0 auto;
+}
+.cbox{	
+width: 465px;
+margin: 0 auto;	
+}
+.addbox{
+	width: 100%;
+	margin-top: 25px;
+}
+.addbtn{
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+.addbtn a{
+	margin-left: 60px;
+}
+.addbox label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	vertical-align: middle;
+}
+.addbox a{
+	display: inline-block;
+	width: 250px;
+	text-align: right;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.college.model">
+
+	<class name="com.college.model.CollegeModel" table="college">
+	    <id name="id" column="id" type="int">
+              <!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+            <generator class="native"/>
+        </id>
+		     <!-- 逻辑主键学院编号 -->
+           <property
+            name="collegeNumber"
+            column="collegeNumber"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 学院名称 -->
+          <property
+            name="collegeName"
+            column="collegeName"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单日期型属性: 成立日期 -->
+          <property
+            name="collegeBirthDate"
+            column="collegeBirthDate"
+            	type="string"
+            	length="10"
+          />
+
+          <!-- 简单字符串属性: 院长姓名 -->
+          <property
+            name="collegeMan"
+            column="collegeMan"
+            type="string"
+            length="10"
+          />
+
+          <!-- 简单字符串属性: 联系电话 -->
+          <property
+            name="collegeTelephone"
+            column="collegeTelephone"
+            type="string"
+            length="20"
+          />
+
+          <!-- 简单字符串属性: 附加信息 -->
+          <property
+            name="collegeMemo"
+            column="collegeMemo"
+            type="string"
+            length="100"
+          />
+           <property
+            name="url"
+            column="url"
+            type="string"
+            length="100"
+          />
+	</class>
+	
+</hibernate-mapping>

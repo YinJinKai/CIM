@@ -1,0 +1,49 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.classInfor.model">
+
+	<class name="com.classInfor.model.ClassInforModel" table="classInfor">
+	    <id name="id" column="id" type="int">
+              <!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+            <generator class="native"/>
+        </id>
+		     <!-- 逻辑主键学院编号 -->
+           <property
+            name="classNumber"
+            column="classNumber"
+            type="string"
+            length="20"
+          />
+           <property
+            name="className"
+            column="className"
+            type="string"
+            length="20"
+          />
+           <property
+            name="classSpecialFieldNumber"
+            column="classSpecialFieldNumber"
+            type="string"
+            length="20"
+          />
+           <property
+            name="classBirthDate"
+            column="classBirthDate"
+            type="string"
+            length="20"
+          />
+           <property
+            name="classTeacherCharge"
+            column="classTeacherCharge"
+            type="string"
+            length="20"
+          />
+           <property
+            name="classMemo"
+            column="classMemo"
+            type="string"
+            length="200"
+          />
+          </class>
+          </hibernate-mapping>

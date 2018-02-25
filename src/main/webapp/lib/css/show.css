@@ -1,0 +1,47 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+/* 	background-color:#eee; */
+}
+.context{
+	width:1200px;
+	margin: 0 auto;
+	
+}
+.inforBox{
+	width: 260px;
+	height: 300px;
+	overflow: hidden;
+     cursor: pointer;
+     margin-top: 20px;
+     margin-right:20px;
+     float: left;
+     background:#f8f7f6;;
+     box-shadow:0px 0px 20px 0px rgba(0,0,0,0.5);
+     border-radius: 25px;
+}
+.inforimg{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.infortext{
+	width:200px;
+	height:30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
+.cimg{
+	width: 100%;
+	height: 100%;
+}
+.inforBox:hover{
+	  box-shadow:0px 0px 35px 0px rgba(0,0,0,0.5);
+}

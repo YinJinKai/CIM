@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.teacher.model">
+	<class name="com.teacher.model.TeacherModel" table="teacher">
+		<id name="id" column="id" type="int">
+			<!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+			<generator class="native" />
+		</id>
+		 <property
+            name="teacherNumber"
+            column="teacherNumber"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherName"
+            column="teacherName"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherPassword"
+            column="teacherPassword"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherSex"
+            column="teacherSex"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherBirthday"
+            column="teacherBirthday"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherArriveDate"
+            column="teacherArriveDate"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherCardNumber"
+            column="teacherCardNumber"
+            type="string"
+            length="200"
+          />
+           <property
+            name="teacherPhone"
+            column="teacherPhone"
+            type="string"
+            length="200"
+          />
+           <property
+            name="teacherPhoto"
+            column="teacherPhoto"
+            type="string"
+            length="20"
+          />
+           <property
+            name="teacherAddress"
+            column="teacherAddress"
+            type="string"
+            length="200"
+          />
+           <property
+            name="teacherMemo"
+            column="teacherMemo"
+            type="string"
+            length="900"
+          />
+	</class>
+</hibernate-mapping>

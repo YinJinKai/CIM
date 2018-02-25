@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.context{
+	width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+.sTitle{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background:#494437;
+	margin-top: 20px;
+}
+.touxiang{
+  width: 120px;
+  height: 130px;
+  background: black;
+  position: absolute;
+  right: 80px;
+  top: 30px;
+  border: 2px solid saddlebrown;
+}
+.touxiang img{
+	width: 100%;
+	height: 100%;
+}
+.stext{
+	width: 200px;
+	height: 50px;
+	background: #feeebd;
+	text-align: center;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 30px;
+	margin-left: 20px;
+}
+.sdeatils{
+	margin-top: 20px;
+}
+.sdeatils a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	text-align: right;
+	line-height: 30px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.sdeatils span{
+	display: inline-block;
+	height: 30px;
+	text-align: left;
+	line-height: 30px;
+}
+.sdeatils div{
+	width: 600px;
+	height: 100px;
+	border: 1px solid black;
+	margin-left: 100px;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+.backIndex{
+	width:100%;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.backIndex a{
+	text-decoration:none;
+	display: inline-block;
+	width: 100px;
+	height:30px;
+	background: #494437;
+	color:white;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+}
+.backIndex a:hover{
+	background: rgba(184,52,0,1);
+	color:white;
+}

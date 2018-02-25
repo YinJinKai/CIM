@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<!-- 页面编码格式 -->
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.devMode" value="true" />
+	<!--Struts2中Action对象的创建交给spring完成 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 默认访问页面 -->
+	<package name="default" extends="struts-default" namespace="/">
+		<default-action-ref name="default" />
+		<action name="default">
+			<result>/login.jsp</result>
+		</action>
+	</package>
+	<!-- Struts2在2.5版本后添加strict-method-invocation(严格方法访问)，默认为true，不能使用动态方法调用功能，故需设为false -->
+	<!-- class=“”开头要小写 因为是通过注解 加到容器里的，默认实例化名 开头小写 -->
+	<!-- 登录配置 -->
+	<package name="login" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="login_*" class="loginAction" method="{1}">
+			<result name="success_view">WEB-INF/view/adminIndex.jsp</result>
+			<result name="toAdminIndex">WEB-INF/view/page/adminIndex.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="inputnull">/login.jsp</result>
+			<result name="login_view">/login.jsp</result>
+			<result name="loginout">/login.jsp</result>
+			<result name="loginInfor" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			
+		</action>
+	</package>
+	<!-- college配置 -->
+	<package name="college" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="college_*" class="collegeAction" method="{1}">
+			<result name="toAddPage">WEB-INF/view/page/addCollegeInfor.jsp</result>
+			<result name="toSelectPage">WEB-INF/view/page/selectCollegeInfor.jsp</result>
+			<result name="addError">WEB-INF/view/page/addSuccess.jsp</result>
+			<result name="addSuccess">WEB-INF/view/page/addSuccess.jsp</result>
+			<result name="selectSuccess" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="toXueyuanSuccess">WEB-INF/view/loginPage/showXueyuan.jsp</result>
+			<result name="showLoginCollegePageSuccess" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="toshowCollegedetails">WEB-INF/view/loginPage/collegedetails.jsp</result>
+		    <result name="showCollegedetails" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="showCollegeCombox" type="json"> 
+			  <param name="root">comboxlistResult</param>  
+			</result>
+		</action>
+	</package>
+	<!-- student配置 -->
+	<package name="student" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="student_*" class="studentAction" method="{1}">
+		<result name="addError">WEB-INF/view/page/addStudentSuccess.jsp</result>
+		<result name="addSuccess">WEB-INF/view/page/addStudentSuccess.jsp</result>
+			<result name="toAddPage">WEB-INF/view/page/addStudentInfor.jsp</result>
+			<result name="toAdminSelectStudentPage">WEB-INF/view/page/selectStudentInfor.jsp</result>
+			<result name="selectAll" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="selectByIdInfor" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="updateByIdInfor" type="json"> 
+			  <param name="root">listInfor</param>  
+			</result>
+			<result name="paginationselectAll" type="json"> 
+			  <param name="root">resultMap</param>  
+			</result>
+		</action>
+	</package>
+	<!-- major配置 -->
+	<package name="major" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		
+		<action name="major_*" class="majorAction" method="{1}">
+		<result name="addError">WEB-INF/view/page/addMajorSuccess.jsp</result>
+		<result name="addSuccess">WEB-INF/view/page/addMajorSuccess.jsp</result>
+		<result name="toAddPage">WEB-INF/view/page/addMajorInfor.jsp</result>
+		<result name="toAdminSelectInforPage">WEB-INF/view/page/selectMajorInfor.jsp</result>
+		<result name="showMajorCombox" type="json"> 
+			  <param name="root">comboxlistResult</param>  
+			</result>
+			<result name="selectAll" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+		</action>
+	</package>
+		<!-- class配置 -->
+	<package name="classInfor" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="class_*" class="classAction" method="{1}">
+		    <result name="addError">WEB-INF/view/page/addClassSuccess.jsp</result>
+		    <result name="addSuccess">WEB-INF/view/page/addClassSuccess.jsp</result>
+			<result name="toAddPage">WEB-INF/view/page/addClassInfor.jsp</result>
+			<result name="toAdminSelectClassInforPage">WEB-INF/view/page/selectClassInfor.jsp</result>
+			<result name="showClassCombox" type="json"> 
+			  <param name="root">comboxlistResult</param>  
+			</result>
+			<result name="selectAll" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+		</action>
+	</package>
+			<!-- teacher配置 -->
+	<package name="teacher" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		
+		<action name="teacher_*" class="teacherAction" method="{1}">
+		    <result name="addError">WEB-INF/view/page/addTeacherSuccess.jsp</result>
+		<result name="addSuccess">WEB-INF/view/page/addTeacherSuccess.jsp</result>
+			<result name="toAddPage">WEB-INF/view/page/addTeacherInfor.jsp</result>
+			<result name="toShowTeacherPage">WEB-INF/view/loginPage/showTeacher.jsp</result>
+			<result name="toTeacherDetail">WEB-INF/view/loginPage/teacherDetails.jsp</result>
+			<result name="toAdminSelectTeacherPage">WEB-INF/view/page/selectTeacher.jsp</result>
+			<result name="showTeacherCombox" type="json"> 
+			  <param name="root">comboxlistResult</param>  
+			</result>
+			<result name="showAllTeacherInfor" type="json"> 
+			  <param name="root">reultList</param>  
+			</result>
+			<result name="showTeacherdetails" type="json"> 
+			  <param name="root">reultList</param>  
+			</result>
+			<result name="showSearchTeacherInfor" type="json"> 
+			  <param name="root">reultList</param>  
+			</result>
+		</action>
+	</package>
+				<!-- news配置 -->
+	<package name="news" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="news_*" class="newsAction" method="{1}">
+		  <result name="addError">WEB-INF/view/page/addNewsSuccess.jsp</result>
+		<result name="addSuccess">WEB-INF/view/page/addNewsSuccess.jsp</result>
+			<result name="toAddPage">WEB-INF/view/page/addNews.jsp</result>
+			<result name="toNewsDeatilsPage">WEB-INF/view/loginPage/newsDeatils.jsp</result>
+			<result name="toshowNewsPage">WEB-INF/view/loginPage/showNews.jsp</result>
+			<result name="toAdminSelectNewsPage">WEB-INF/view/page/selectAdminNews.jsp</result>
+			<result name="showNewsInfor" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+			<result name="showNewsInforbyId" type="json"> 
+			  <param name="root">listResult</param>  
+			</result>
+		</action>
+	</package>
+					<!-- culture配置 -->
+	<package name="culture" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="culture_*" class="cultureAction" method="{1}">
+			<result name="toCulturePage">WEB-INF/view/loginPage/showCulture.jsp</result>
+		</action>
+	</package>
+	<!-- 引入资源文件 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource"></constant>
+
+</struts>

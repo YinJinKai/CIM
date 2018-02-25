@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.news.model">
+
+	<class name="com.news.model.NewsModel" table="news">
+	    <id name="id" column="id" type="int">
+              <!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+            <generator class="native"/>
+        </id>
+		     <!-- 逻辑主键学院编号 -->
+           <property
+            name="newsTitle"
+            column="newsTitle"
+            type="string"
+            length="200"
+          />
+              <property
+            name="newsContent"
+            column="newsContent"
+            type="string"
+            length="999"
+          />
+              <property
+            name="newsDate"
+            column="newsDate"
+            type="string"
+            length="200"
+          />
+              <property
+            name="newsPhoto"
+            column="newsPhoto"
+            type="string"
+            length="200"
+          />
+          </class>
+          </hibernate-mapping>

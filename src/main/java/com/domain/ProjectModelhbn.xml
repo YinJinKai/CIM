@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.project.model">
+<class name="com.project.model.ProjectModel" table="project">
+	    <id name="id" column="id" type="int">
+              <!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+            <generator class="native"/>
+        </id>
+		 <property
+			name="courseNumber"
+			column="courseNumber" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="courseName"
+			column="courseName" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="courseTeacher"
+			column="courseTeacher" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="courseTime"
+			column="courseTime" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="coursePlace"
+			column="coursePlace" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="courseScore"
+			column="courseScore" 
+			type="string" 
+			length="20"
+		/>
+		 <property
+			name="courseMemo"
+			column="courseMemo" 
+			type="string" 
+			length="20"
+		/>
+	</class>
+
+
+
+
+</hibernate-mapping>

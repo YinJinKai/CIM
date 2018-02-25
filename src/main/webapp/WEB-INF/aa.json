@@ -1,0 +1,77 @@
+[
+	{
+		"total": 2,
+		"rows": [
+			{
+				"id": 2,
+				"order": "",
+				"page": 1,
+				"pager": {
+					"endIndex": 0,
+					"indexs": [],
+					"length": 6,
+					"mysqlQueryCondition": " limit 0,10",
+					"orderCondition": "",
+					"orderDirection": true,
+					"orderField": "",
+					"pageCount": 0,
+					"pageId": 1,
+					"pageOffset": 0,
+					"pageSize": 10,
+					"pageTail": 0,
+					"rowCount": 0,
+					"startIndex": 1
+				},
+				"rows": 10,
+				"sort": "",
+				"studentAddress": "22222",
+				"studentBirthday": "2014-01-02",
+				"studentClassNumber": "6",
+				"studentEmail": "11111",
+				"studentMemo": "222",
+				"studentName": "张二",
+				"studentNumber": "1",
+				"studentPassword": "123456",
+				"studentPhoto": "CIM/uploadFile/859f0448-10f8-4546-996e-2cd8968a8814.jpg",
+				"studentSex": "1",
+				"studentState": "0",
+				"studentTelephone": "11111155"
+			},
+			{
+				"id": 3,
+				"order": "",
+				"page": 1,
+				"pager": {
+					"endIndex": 0,
+					"indexs": [],
+					"length": 6,
+					"mysqlQueryCondition": " limit 0,10",
+					"orderCondition": "",
+					"orderDirection": true,
+					"orderField": "",
+					"pageCount": 0,
+					"pageId": 1,
+					"pageOffset": 0,
+					"pageSize": 10,
+					"pageTail": 0,
+					"rowCount": 0,
+					"startIndex": 1
+				},
+				"rows": 10,
+				"sort": "",
+				"studentAddress": "某某街道",
+				"studentBirthday": "2018-01-29",
+				"studentClassNumber": "6",
+				"studentEmail": "111@qq.com",
+				"studentMemo": "好好....",
+				"studentName": "小花",
+				"studentNumber": "2",
+				"studentPassword": "1111",
+				"studentPhoto": "CIM/uploadFile/859f0448-10f8-4546-996e-2cd8968a8814.jpg",
+				"studentSex": "0",
+				"studentState": "2",
+				"studentTelephone": "111111"
+			}
+		]
+	}
+]

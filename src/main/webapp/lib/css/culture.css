@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.context{
+	
+	width: 1000px;
+	margin:0 auto;
+}
+.topbox{
+	width: 100%;
+	height:95px;
+	position: relative;
+	background: url(../img/head.jpg) no-repeat;
+	background-size: 100% 100%;
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.8);
+}
+.topbox em{
+	width: 280px;
+	height: 85px;
+	display: inline-block;
+	background: url(../img/logoindex.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+.topTitle{
+	width: 100%;
+	height: 30px;
+	background: #850001;
+	line-height: 30px;
+	margin-top: 10px;
+		box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.topTitle a{
+	display: inline-block;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	font-weight: bold;
+}
+.middleLeftbox{
+	width: 700px;
+	height:403px;
+	background: #850001;
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+	
+}
+.middleLeftTitle{
+	width: 700px;
+	height: 30px;
+	background: #850001;
+	line-height: 30px;
+	
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.middleLeftTitle a{
+	display: inline-block;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	font-weight: bold;
+}
+.middlebox{
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+	
+}
+.middleRightbox{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 250px;
+	height:403px;
+	background: rgba(248,247,246,0.7);
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.middleRightTitle{
+	width: 250px;
+	height: 30px;
+	background: #850001;
+	line-height: 30px;
+	
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.middleRightTitle a{
+	display: inline-block;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	font-weight: bold;
+}
+.nextbox{
+	width: 100%;
+	background: blue;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+	background: rgba(248,247,246,0.7);
+}
+.nextboxTitle{
+	width:100%;
+	height: 30px;
+	background: #850001;
+	line-height: 30px;
+	
+	box-shadow:0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+.nextboxTitle a{
+	display: inline-block;
+	width: 100px;
+	margin-left: 10px;
+	color: white;
+	font-weight: bold;
+}
+.cphoto{
+	width: 100%;
+	height: 320px;
+}
+.jianjie{
+	width:720px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	line-height:30px;
+	text-indent:2em;
+	
+}
+.oldTitleContext{
+	width: 100%;
+	
+}
+.cnews{
+	width: 200px;
+	height: 25px;
+	margin: 0 auto;
+	margin-top: 10px;
+	
+	
+}
+.cnews:hover{
+	color:#850001;
+	cursor: pointer;
+}
+.ct:hover{
+	color:rgba(255,0,45,1);
+	cursor: pointer;
+}
+.jianxun{
+	width:100%;
+	
+	color: #444;
+	
+}
+.ct{
+	float: left;
+	display: inline-block;
+	font-size: 14px;
+	width: 100px;
+	height: 30px;
+	overflow: hidden;
+}
+.cd{
+	float: right;
+	display: inline-block;
+		font-size: 12px;
+		color: #999;
+		font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.major.model">
+
+	<class name="com.major.model.MajorModel" table="major">
+	    <id name="id" column="id" type="int">
+              <!-- 指定对象标识符生成器：class属性指定生成器的类别名 -->
+            <generator class="native"/>
+        </id>
+		     <!-- 逻辑主键学院编号 -->
+           <property
+            name="specialFieldNumber"
+            column="specialFieldNumber"
+            type="string"
+            length="20"
+          />
+            
+           <property
+            name="specialFieldName"
+            column="specialFieldName"
+            type="string"
+            length="20"
+          />
+              
+           <property
+            name="specialCollegeNumber"
+            column="specialCollegeNumber"
+            type="string"
+            length="20"
+          />
+               
+           <property
+            name="specialBirthDate"
+            column="specialBirthDate"
+            type="string"
+            length="20"
+          />
+            
+           <property
+            name="specialMan"
+            column="specialMan"
+            type="string"
+            length="20"
+          />
+             
+           <property
+            name="specialMemo"
+            column="specialMemo"
+            type="string"
+            length="800"
+          />
+          </class>
+          </hibernate-mapping>
