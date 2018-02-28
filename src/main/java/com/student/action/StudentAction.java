@@ -178,8 +178,6 @@ public void setRows(Integer rows) {
 
 public String paginationselectAll() {
     StudentModel sm=new StudentModel();
-	System.out.println(page);
-	System.out.println(rows);
 	sm.setPage(page);
 	sm.setRows(rows);
 	int count = studentService.selectCount(sm);

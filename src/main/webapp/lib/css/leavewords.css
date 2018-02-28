@@ -1,0 +1,256 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+/* 	background: white; */
+}
+.context{
+	overflow:hidden;
+	width: 980px;
+	margin:0 auto;
+}
+.topbox{
+	width: 100%;
+	height:60px;
+	position: relative;
+	margin-top: 10px;
+}
+.topbox em{
+	width: 124px;
+	height: 50px;
+	display: inline-block;
+	background: url(../img/pinglun.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 10px;
+	margin-top: 4px;
+}
+.middlebox{
+	width: 100%;
+}
+		#section5 {
+			width: 100%;
+	
+		}
+		
+		
+		.comment_container {
+			width: 950px;
+			margin: 0 auto;
+			position: relative;
+			top: 40px;
+		}
+		
+		.cmt_mod {
+			font-size: 14px;
+		}
+		
+		.cmt_comments {
+		    margin-top:-20px;
+			margin-bottom: 15px;
+			position: relative;
+			border-radius:10px;
+			box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+		}
+		
+		.cmt_comments .cmt_bd {
+			height: auto;
+			width: 920px;
+			outline: none;
+			position: relative;
+			font-size: 14px;
+			margin: 0 auto;
+		}
+		
+		.cmt_comments .cmt_comment_box {
+			padding: 30px 0 0 0;
+			position: relative;
+			z-index: 1;
+		}
+		
+		.cmt_comments .cmt_author {
+			position: relative;
+			margin-bottom: 15px;
+			font-size: 12px;
+			background: url(img/pinglunimg/name_icon_0f040c0.png) 0 center no-repeat;
+			padding-left: 18px;
+		}
+		
+		.cmt_comments .cmt_author_face {
+			position: absolute;
+			left: -50px;
+			width: 35px;
+			height: 35px;
+		}
+		
+		.cmt_comments .cmt_author_name {
+			color: #ec7d7a;
+			font-size: 12px;
+		}
+		
+		.cmt_comments .cmt_author_date {
+			color: #000;
+			font-size: 12px;
+			position: absolute;
+			right: 0;
+			z-index: 2;
+			top: 0;
+		}
+		
+		.cmt_comments .cmt_content {
+			padding-bottom: 10px;
+			word-wrap: break-word;
+			word-break: break-all;
+			background: #f8f8f8;
+			border: 1px solid #eaeaea;
+			border-radius: 5px;
+			padding: 18px 30px 32px;
+			
+		}
+		
+		.cmt_comments .cmt_content p {
+			margin-bottom: 10px;
+			color: #888;
+			font-size: 14px;
+		}
+		
+		.cmt_comments .cmt_reply_btn {
+			float: right;
+			font-size: 16px;
+			color: #ec7d7a;
+			margin-top: 5px;
+			margin-left: 10px;
+		}
+		
+		.cmt_comments .cmt_author_like {
+			float: right;
+			display: inline-block;
+			height: 29px;
+			line-height: 29px;
+			vertical-align: baseline;
+			font-size: 16px;
+			padding-left: 25px;
+			padding-right: 6px;
+			background: url(img/pinglunimg/icon_41de3a0.png) 8px -21px no-repeat;
+			color: #ec7d7a;
+			cursor: pointer;
+		}
+		
+		.cmt_ft {
+			position: relative;
+			font-size: 14px;
+		}
+		
+		.cmt_pages {
+			padding: 55px 0 30px;
+			text-align: center;
+		}
+		
+		.cmt_pages a {
+			display: inline-block;
+			zoom: 1;
+			width: 24px;
+			height: 24px;
+			font-size: 14px;
+			margin-right: 3px;
+			margin-left: 3px;
+			text-align: center;
+			line-height: 24px;
+			color: #000000;
+			cursor: pointer;
+		}
+		
+		.cmt_pages a.cur,
+		.cmt_pages span.cur {
+			color: #fff;
+			background: #ff6d69;
+		}
+		
+		.cmt_login_info {
+			text-align: right;
+			display: block;
+			padding: 0 15px 10px 0;
+		}
+		
+		.cmt_login_info a {
+			color: #ff8b88;
+		}
+		
+		.cmt_reply {
+			font-size: 14px;
+			position: relative;
+			width: 950px;
+			margin: 0 auto;
+			margin-top: 50px;
+		}
+		
+		.cmt_reply .cmt_reply_area {
+			padding: 5px;
+			background: #f8f8f8;
+			border: 1px solid #dedede;
+			padding-bottom: 30px;
+			box-shadow:0px 0px 20px 0px rgba(0,0,0,0.6);
+			    border-radius: 5px;
+		}
+		
+		.cmt_reply .cmt_reply_area .cmt_reply_txt {
+			display: block;
+			width: 100%;
+			height: 106px;
+			border: 0;
+			outline: 0;
+			resize: none;
+			overflow: auto;
+			background: 0 0;
+		}
+		
+		.cmt_reply .cmt_reply_form .cmt_reply_btns {
+			position: relative;
+			text-align: right;
+			padding-top: 15px;
+		}
+		
+		.cmt_reply .cmt_reply_count {
+			height: 28px;
+			font: 700 18px/28px Georgia;
+			color: #bbb;
+			position: absolute;
+			left: 15px;
+			top: -30px;
+		}
+		
+		.cmt_reply .cmt_reply_anon {
+			font: 700 18px/28px Georgia;
+			font-size: 12px;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		
+		.cmt_reply .cmt_reply_anon input {
+			vertical-align: -2px;
+		}
+		
+		.cmt_reply .cmt_reply_submit {
+			border: 0;
+			width: 160px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #fff;
+			cursor: pointer;
+			background-color: #ff6d69;
+			font-size: 18px;
+			border-radius: 25px;
+		}
+		
+		.comment_container .comment_side_pic {
+			position: absolute;
+			width: 235px;
+			height: 342px;
+			background: url(img/pinglunimg/comment_side_b6c42ae.png) 0 0 no-repeat;
+			bottom: 0;
+			right: -268px;
+		}

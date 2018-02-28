@@ -60,7 +60,6 @@ public class StudentDaoImpl implements StudentDao{
 		String sql="select count(*) from com.student.model.StudentModel";
 		List<?> flag = template.find(sql);
 		  Number num = (Number) flag.get(0);  
-		  System.out.println("TEST"+num);
 	      return num.intValue();  
 		
 	}

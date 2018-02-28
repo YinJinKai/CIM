@@ -162,6 +162,18 @@
 			<result name="toCulturePage">WEB-INF/view/loginPage/showCulture.jsp</result>
 		</action>
 	</package>
+	<package name="leaveWords" extends="struts-default,json-default" namespace="/"
+		strict-method-invocation="false">
+		<action name="leaveWords_*" class="leaveWordsAction" method="{1}">
+		<result name="isNull">WEB-INF/view/loginPage/leaveWords.jsp</result>
+		<result name="addSuccess">WEB-INF/view/loginPage/leaveWords.jsp</result>
+		<result name="addfail">WEB-INF/view/loginPage/leaveWords.jsp</result>
+		<result name="toLeaveWordsPage">WEB-INF/view/loginPage/leaveWords.jsp</result>
+		<result name="selectAllInfor" type="json"> 
+			  <param name="root">mapReulst</param>  
+			</result>
+		</action>
+	</package>
 	<!-- 引入资源文件 -->
 	<constant name="struts.custom.i18n.resources" value="messageResource"></constant>
 

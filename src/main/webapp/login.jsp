@@ -61,14 +61,14 @@
 		<div id="aa" data-options="fit:true,selected:true"
 			class="easyui-accordion" style="width: 300px;">
 
-			<div title="学院信息" data-options="iconCls:'icon-reload'">
+			<div title="学院信息" data-options="iconCls:'icon-tip'">
 				<a id="btn2"
 					onclick="showtabs('学院介绍','<%=request.getContextPath()%>/college_tologinXueyuanPage')"
 					style="width: 100%">二级学院介绍</a> <a id="btn3"
 					onclick="showtabs('专业介绍','')" style="width: 100%">专业介绍</a> <a
 					id="btn4" onclick="showtabs('班级信息','')" style="width: 100%">班级信息</a>
 			</div>
-			<div title="师生事宜" data-options="iconCls:'icon-reload'">
+			<div title="师生事宜" data-options="iconCls:'icon-tip'">
 				<a id="btn5"
 					onclick="showtabs('教师信息','<%=request.getContextPath()%>/teacher_toShowTeacherPage')"
 					style="width: 100%">教师信息</a> <a id="btn6"
@@ -77,23 +77,28 @@
 				<a id="btn8" onclick="showtabs('选课信息','')" style="width: 100%">选课信息</a>
 				<a id="btn9" onclick="showtabs('成绩查询','')" style="width: 100%">成绩查询</a>
 			</div>
-			<div title="新闻中心" data-options="iconCls:'icon-reload'">
+			<div title="新闻中心" data-options="iconCls:'icon-tip'">
 				<a id="btn10"
 					onclick="showtabs('今日头条','<%=request.getContextPath()%>/news_toshowNewsPage')"
 					style="width: 100%">今日头条</a>
 			</div>
-			<div title="后台登录" data-options="iconCls:'icon-man'">
-				<a id="btn1" onclick="adminlogin()" style="width: 100%">登录</a>
+			
+			<div title="评论区" data-options="iconCls:'icon-tip'" style="overflow: hidden;">
 				<div class="menuicon">
-					<div class="app2" onclick="login(2)">
+					<div class="app2" onclick="showtabs('留言','<%=request.getContextPath()%>/leaveWords_toleaveWordsPage')">
 						<img class="icon" src="/CIM/lib/img/xin.png">
-						<div class="title">欢迎来搞</div>
+						<div class="title">留言</div>
 					</div>
-					<div class="app2" onclick="login(2)">
+					<div class="app2" >
 						<img class="icon" src="/CIM/lib/img/maps.png">
 						<div class="title">帮助</div>
 					</div>
 				</div>
+				
+			</div>
+			<div title="后台登录" data-options="iconCls:'icon-man'" style="overflow: hidden;">
+				<a id="btn1" onclick="adminlogin()" style="width: 100%">登录</a>
+				
 			</div>
 		</div>
 	</div>
